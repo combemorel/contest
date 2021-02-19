@@ -9,17 +9,19 @@
 
     <ImageView
         android:id="@+id/img"
-        android:layout_marginLeft="@dimen/size_4"
+        android:padding="@dimen/padding_8"
         android:layout_width="@dimen/width_120"
         android:layout_height="@dimen/height_80"
         android:scaleType="centerCrop"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/name_fragment"
+        app:layout_constraintBottom_toBottomOf="parent"
         />
 
     <TextView
         android:id="@+id/name_fragment"
+        android:padding="@dimen/padding_8"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="@dimen/textSize_21"
@@ -33,6 +35,7 @@
 
     <TextView
         android:id="@+id/capital_fragment"
+        android:padding="@dimen/padding_8"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="@dimen/textSize_21"
@@ -44,6 +47,7 @@
 
     <TextView
         android:id="@+id/continent_fragment"
+        android:padding="@dimen/padding_8"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="@dimen/textSize_21"

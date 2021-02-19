@@ -3,7 +3,6 @@ package fr.campus.academy.worldvisit.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import fr.campus.academy.worldvisit.R
@@ -11,18 +10,11 @@ import fr.campus.academy.worldvisit.adapter.CountriesAdapter
 import fr.campus.academy.worldvisit.bdd.AppDatabaseHelper
 import fr.campus.academy.worldvisit.bdd.CountryDTO
 import fr.campus.academy.worldvisit.ws.CountryWs
-import fr.campus.academy.worldvisit.ws.ReseauHelper
-import fr.campus.academy.worldvisit.ws.RetrofitSingleton
-import fr.campus.academy.worldvisit.ws.WSInterface
 import kotlinx.android.synthetic.main.activity_add.*
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class MainActivity : AppCompatActivity()
 {
-    private lateinit var countriesAdapter: CountriesAdapter
-    private lateinit var listCountriesWs: MutableList<CountryWs>
+
     private var mainActivity = this
 
     override fun onCreate(savedInstanceState: Bundle?)

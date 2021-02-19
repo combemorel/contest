@@ -3,7 +3,7 @@
 
     <string name="search">Saisir un pays ...</string>
 
-    <string name="btn_search">ok</string>
+    <string name="btn_search">OK</string>
     <string name="btn_add_country">Ajouter un Pays</string>
-    <string name="btn_validate"></string>
+    <string name="btn_validate">Valider</string>
 </resources>

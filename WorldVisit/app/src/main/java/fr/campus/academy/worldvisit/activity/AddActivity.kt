@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import fr.campus.academy.worldvisit.R
 import fr.campus.academy.worldvisit.adapter.CountriesAdapter
@@ -64,12 +63,12 @@ class AddActivity : AppCompatActivity()
 
     }
 
-    fun searchCountry(view: View)
+    fun searchCountry(view: View?)
     {
         if (ReseauHelper.isConnect(this))
         {
             val service = RetrofitSingleton.retrofit.create(WSInterface::class.java)
-            var call = if(search.text.isNullOrEmpty())
+            val call = if(search.text.isNullOrEmpty())
                 {
                     service.wsGet()
                 }else
