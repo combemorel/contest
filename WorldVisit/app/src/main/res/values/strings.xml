@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WorldVisit</string>
+
+    <string name="search">Saisir un pays ...</string>
+
+    <string name="btn_search">ok</string>
+    <string name="btn_add_country">Ajouter un Pays</string>
+    <string name="btn_validate"></string>
+</resources>

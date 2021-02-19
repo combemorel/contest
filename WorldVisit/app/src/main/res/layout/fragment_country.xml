@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CountryFragment">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_margin="@dimen/padding_8"
+        android:layout_width="@dimen/width_120"
+        android:layout_height="@dimen/height_80"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/name_fragment"
+        />
+
+    <TextView
+        android:id="@+id/date_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_21"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/padding_8"
+
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/name_fragment"
+        />
+
+    <TextView
+        android:id="@+id/name_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_21"
+        android:layout_margin="@dimen/padding_8"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/img"
+        app:layout_constraintRight_toLeftOf="@+id/btn_fragment"
+        app:layout_constraintBottom_toTopOf="@id/capital_fragment"
+        />
+
+
+    <TextView
+        android:id="@+id/capital_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_21"
+        android:layout_margin="@dimen/padding_8"
+        app:layout_constraintTop_toBottomOf="@id/name_fragment"
+        app:layout_constraintLeft_toRightOf="@id/img"
+        app:layout_constraintRight_toLeftOf="@+id/btn_fragment"
+        app:layout_constraintBottom_toTopOf="@id/continent_fragment"
+        />
+
+    <TextView
+        android:id="@+id/continent_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_21"
+        android:layout_margin="@dimen/padding_8"
+        app:layout_constraintTop_toBottomOf="@id/capital_fragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/img"
+        app:layout_constraintRight_toLeftOf="@+id/btn_fragment"
+         />
+
+    <ImageButton
+        android:id="@+id/btn_fragment"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_delete"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/name_fragment"
+        android:background="@color/red"
+    ma
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
