@@ -25,7 +25,7 @@ class DateActivity : AppCompatActivity() {
         val capital = intent.getStringExtra("capital")
         val continent = intent.getStringExtra("continent")
         val image = intent.getStringExtra("flag")
-        val date: String = "'"+date_picker.dayOfMonth.toString()+"-"+date_picker.month.toString()+"-"+date_picker.year.toString()+"'"
+        val date: String = date_picker.dayOfMonth.toString()+"-"+date_picker.month.toString()+"-"+date_picker.year.toString()
         Log.d("TAG" ,name.toString())
         Log.d("TAG" ,capital.toString())
         Log.d("TAG" ,continent.toString())
